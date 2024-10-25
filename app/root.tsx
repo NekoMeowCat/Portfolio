@@ -9,6 +9,10 @@ import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 
+if (typeof window !== "undefined") {
+  require("preline/preline");
+}
+
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -32,9 +36,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <main>{children}</main>
         <ScrollRestoration />
         <Scripts />
+        <script src="./node_modules/preline/dist/preline.js"></script>
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,4 +11,14 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: "Bueno";
+  src:
+    url("/fonts/bueno-regular.woff") format("woff"),
+    url("/fonts/bueno-regular.ttf") format("truetype"),
+    url("/fonts/bueno-regular.otf") format("opentype");
+  font-weight: 50;
+  font-style: bold;
 }
