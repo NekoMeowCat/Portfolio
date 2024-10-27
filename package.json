@@ -11,6 +11,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
     "@remix-run/node": "^2.12.1",
     "@remix-run/react": "^2.12.1",
     "@remix-run/serve": "^2.12.1",
@@ -20,10 +21,11 @@
     "isbot": "^4.1.0",
     "lucide-react": "^0.451.0",
     "particles.js": "^2.0.0",
-    "preline": "^2.5.0",
+    "preline": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.5.3",
+    "swiper": "^11.1.14",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {

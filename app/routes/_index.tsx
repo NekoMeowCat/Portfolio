@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Carousel from "~/component/carousel";
 
 export const meta: MetaFunction = () => {
   return [
@@ -173,18 +174,16 @@ export default function dashboard() {
         </article>
       </section>
 
-      <section className="flex-wrap min-h-screen max-w-full border bg-[#F8F0DC] mt-14 px-6">
+      <section className="flex-wrap h-auto max-w-full border bg-[#F8F0DC] mt-14 px-6">
         <article className="border border-green-500 h-auto text-5xl md:text-6xl font-bold font-bueno md:w-3/4 leading-tight uppercase tracking-wide text-black">
           I am a creative independent developer with two years of experience
           working freelancing. I specialize in building and developing new
           digital solutions, combining my technical expertise and creativity to
           achieve successful projects for my clients.
         </article>
-
         <span className="flex items-end justify-end uppercase text-gray-400 text-7xl md:text-9xl font-bueno border h-auto text-black mt-10">
           Lorem ipsum dolor sit.
         </span>
-
         <article className="block md:flex justify-between w-full">
           <div className="block md:flex md:justify-between items-end">
             <span className="flex gap-x-3 p-2 items-end">
@@ -245,52 +244,124 @@ export default function dashboard() {
           </div>
         </article>
       </section>
-      <section className="grid grid-cols-2 gap-4 min-h-screen m-2 p-1 bg-[#EDE9DD]">
-        <div className="font-black font-anton text-9xl flex flex-col border items-start justify-center relative">
-          <div className="relative mb-3">
-            <h1
-              className="absolute top-4 left-4 text-black"
-              style={{
-                textShadow:
-                  "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
-              }}
-            >
-              WORK
-            </h1>
-            <h1
-              className="relative text-[#EDE9DD]"
-              style={{
-                textShadow:
-                  "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
-              }}
-            >
-              WORK
-            </h1>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen m-2 p-1 bg-[#F8F0DC]">
+        <article className="flex flex-col border items-start relative my-6 md:my-0">
+          {/* Background Image */}
+          <img
+            src="/bg.jpg"
+            alt="background"
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            style={{ opacity: 0.6 }} // Adjust opacity if needed
+          />
+
+          <div className="relative z-10 w-full">
+            <div className="flex items-end justify-end w-full p-2 text-slate-800 font-black font-anton text-8xl md:text-9xl">
+              19
+            </div>
+            <div className="relative mb-3 font-black font-anton text-8xl md:text-9xl">
+              <h1
+                className="absolute top-4 left-4 text-black"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
+                }}
+              >
+                WORK
+              </h1>
+              <h1
+                className="relative text-[#EDE9DD]"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
+                }}
+              >
+                WORK
+              </h1>
+            </div>
+            <div className="relative font-black font-anton text-8xl md:text-9xl">
+              <h1
+                className="absolute top-4 left-4 text-black"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
+                }}
+              >
+                EXPERIENCE
+              </h1>
+              <h1
+                className="relative text-[#EDE9DD]"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
+                }}
+              >
+                EXPERIENCE
+              </h1>
+            </div>
           </div>
 
-          <div className="relative">
-            <h1
-              className="absolute top-4 left-4 text-black "
-              style={{
-                textShadow:
-                  "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
-              }}
-            >
-              EXPERIENCE
-            </h1>
-            <h1
-              className="relative text-[#EDE9DD] "
-              style={{
-                textShadow:
-                  "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
-              }}
-            >
-              EXPERIENCE
-            </h1>
+          {/* Unown Images */}
+          <div className="relative z-10 mt-8 h-full w-full flex flex-col space-y-8">
+            <div className="flex justify-evenly">
+              <span className="w-full">
+                <img
+                  src="/pokemon-models/unown-charlie.gif"
+                  alt=""
+                  className=""
+                />
+              </span>
+              <span className="w-full">
+                <img
+                  src="/pokemon-models/unown-foxtrot.gif"
+                  alt=""
+                  className=""
+                />
+              </span>
+              <span className="w-full">
+                <img src="/pokemon-models/latias.gif" alt="" className="" />
+              </span>
+            </div>
+            <div className="flex justify-between">
+              <span className="w-full flex items-center justify-center">
+                <img
+                  src="/pokemon-models/unown-juliet.gif"
+                  alt=""
+                  className=""
+                />
+              </span>
+              <span className="w-full flex items-center justify-center">
+                <img src="/pokemon-models/latios.gif" alt="" className="" />
+              </span>
+              <span className="w-full flex items-center justify-center">
+                <img src="/pokemon-models/unown.gif" alt="" className="" />
+              </span>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div className="border bg-slate-800">1</div>
+        <article className="block border bg-slate-800 relative flex flex-col">
+          <div className="flex justify-between items-center p-2">
+            <span className="font-black font-anton text-[#F8F0DC] text-8xl md:text-9xl border h-auto">
+              98
+            </span>
+            <span className="flex items-end">
+              <img
+                src="/pokemon-models/ludicolo.gif"
+                alt="Bayleef"
+                className=""
+              />
+            </span>
+          </div>
+
+          <img
+            src="/pokeball.png"
+            alt="Pokéball"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-20"
+          />
+
+          <Carousel />
+        </article>
       </section>
     </main>
   );
