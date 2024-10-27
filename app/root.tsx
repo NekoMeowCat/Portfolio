@@ -4,13 +4,19 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLocation,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
+import { useEffect } from "react";
 
 import "./tailwind.css";
 
-if (typeof window !== "undefined") {
-  require("preline/preline");
+import { type IStaticMethods } from "preline/preline";
+
+declare global {
+  interface Window {
+    HSStaticMethods: IStaticMethods;
+  }
 }
 
 export const links: LinksFunction = () => [
@@ -26,6 +32,7 @@ export const links: LinksFunction = () => [
   },
 ];
 
+// Layout component
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -39,12 +46,26 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <main>{children}</main>
         <ScrollRestoration />
         <Scripts />
-        <script src="./node_modules/preline/dist/preline.js"></script>
       </body>
     </html>
   );
 }
 
 export default function App() {
-  return <Outlet />;
+  const location = useLocation();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      import("preline/preline").then((module) => {
+        window.HSStaticMethods = module.HSStaticMethods;
+        window.HSStaticMethods.autoInit();
+      });
+    }
+  }, [location.pathname]);
+
+  return (
+    <Layout>
+      <Outlet />
+    </Layout>
+  );
 }
