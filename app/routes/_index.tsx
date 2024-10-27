@@ -261,7 +261,7 @@ export default function dashboard() {
             </div>
             <div className="relative mb-3 font-black font-anton text-7xl md:text-9xl">
               <h1
-                className="absolute top-3 left-4 text-black"
+                className="absolute top-3 left-4 text-black px-2"
                 style={{
                   textShadow:
                     "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
@@ -302,39 +302,20 @@ export default function dashboard() {
           </div>
 
           {/* Unown Images */}
-          <div className="relative z-10 mt-8 h-full w-full flex flex-col space-y-8">
-            <div className="flex justify-evenly">
-              <span className="w-full">
-                <img
-                  src="/pokemon-models/unown-charlie.gif"
-                  alt=""
-                  className=""
-                />
-              </span>
-              <span className="w-full">
-                <img
-                  src="/pokemon-models/unown-foxtrot.gif"
-                  alt=""
-                  className=""
-                />
-              </span>
-              <span className="w-full">
+          <div className="relative z-10 mt-8 h-full w-full flex flex-col md:space-y-8">
+            <div className="grid grid-cols-2">
+              <span className="w-full col-start-2 flex justify-center">
                 <img src="/pokemon-models/latias.gif" alt="" className="" />
               </span>
             </div>
-            <div className="flex justify-between">
-              <span className="w-full flex items-center justify-center">
-                <img
-                  src="/pokemon-models/unown-juliet.gif"
-                  alt=""
-                  className=""
-                />
-              </span>
-              <span className="w-full flex items-center justify-center">
+            <div className="grid grid-cols-2 ">
+              <span className="w-full col-start-2 flex justify-start flex items-end justify-start">
                 <img src="/pokemon-models/latios.gif" alt="" className="" />
               </span>
-              <span className="w-full flex items-center justify-center">
-                <img src="/pokemon-models/unown.gif" alt="" className="" />
+            </div>
+            <div className="grid grid-cols-2">
+              <span className="w-full flex justify-center">
+                <img src="/pokemon-models/brendan.gif" alt="" className="]" />
               </span>
             </div>
           </div>
