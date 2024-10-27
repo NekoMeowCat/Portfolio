@@ -245,7 +245,7 @@ export default function dashboard() {
         </article>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen m-2 p-1 bg-[#F8F0DC]">
+      <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen m-2 px-4 bg-[#F8F0DC]">
         <article className="flex flex-col border items-start relative my-6 md:my-0">
           {/* Background Image */}
           <img
@@ -259,9 +259,9 @@ export default function dashboard() {
             <div className="flex items-end justify-end w-full p-2 text-slate-800 font-black font-anton text-8xl md:text-9xl">
               19
             </div>
-            <div className="relative mb-3 font-black font-anton text-8xl md:text-9xl">
+            <div className="relative mb-3 font-black font-anton text-7xl md:text-9xl">
               <h1
-                className="absolute top-4 left-4 text-black"
+                className="absolute top-3 left-4 text-black"
                 style={{
                   textShadow:
                     "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
@@ -279,9 +279,9 @@ export default function dashboard() {
                 WORK
               </h1>
             </div>
-            <div className="relative font-black font-anton text-8xl md:text-9xl">
+            <div className="relative font-black font-anton text-7xl md:text-9xl">
               <h1
-                className="absolute top-4 left-4 text-black"
+                className="absolute top-3 left-4 text-black"
                 style={{
                   textShadow:
                     "2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 0 0 5px black",
