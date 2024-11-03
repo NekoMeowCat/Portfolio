@@ -65,11 +65,11 @@ export default function dashboard() {
                 className="hover:translate-x-6 duration-700"
               />
             </span>
-            <span className="flex items-end uppercase text-7xl md:text-8xl font-bueno border h-auto text-black py-2">
+            <span className="flex items-end uppercase text-7xl md:text-8xl font-bueno h-auto text-black py-2">
               Lorem, ipsum dolor.
             </span>
           </div>
-          <article className="relative flex justify-start uppercase text-[8rem] md:text-[12rem] font-anton border h-auto text-black tracking-tight leading-none">
+          <article className="relative flex justify-start uppercase text-[8rem] md:text-[12rem] font-anton h-auto text-black tracking-tight leading-none">
             <span className="absolute top-2 left-4 text-black">
               junzel dela torre
             </span>
@@ -102,7 +102,7 @@ export default function dashboard() {
                 </span>
               </div>
             </div>
-            <div className="h-auto border block md:flex md:justify-between space-y-6 md:space-y-0">
+            <div className="h-auto block md:flex md:justify-between space-y-6 md:space-y-0">
               <div className="block md:flex md:flex-row md:gap-x-4">
                 <span className="uppercase font-anton text-2xl md:text-4xl tracking-tight">
                   socials
@@ -174,14 +174,14 @@ export default function dashboard() {
         </article>
       </section>
 
-      <section className="flex-wrap h-auto max-w-full border bg-[#F8F0DC] mt-14 px-6">
-        <article className="border border-green-500 h-auto text-5xl md:text-6xl font-bold font-bueno md:w-3/4 leading-tight uppercase tracking-wide text-black">
+      <section className="flex-wrap h-auto max-w-full bg-[#F8F0DC] mt-14 px-6">
+        <article className="h-auto text-5xl md:text-6xl font-bold font-bueno md:w-3/4 leading-tight uppercase tracking-wide text-black">
           I am a creative independent developer with two years of experience
           working freelancing. I specialize in building and developing new
           digital solutions, combining my technical expertise and creativity to
           achieve successful projects for my clients.
         </article>
-        <span className="flex items-end justify-end uppercase text-gray-400 text-7xl md:text-9xl font-bueno border h-auto text-black mt-10">
+        <span className="flex items-end justify-end uppercase text-gray-400 text-7xl md:text-9xl font-bueno h-auto text-black mt-10">
           Lorem ipsum dolor sit.
         </span>
         <article className="block md:flex justify-between w-full">
@@ -246,7 +246,7 @@ export default function dashboard() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen m-2 px-4 bg-[#F8F0DC]">
-        <article className="flex flex-col border items-start relative my-6 md:my-0">
+        <article className="flex flex-col items-start relative my-6 md:my-0">
           {/* Background Image */}
           <img
             src="/bg.jpg"
@@ -321,9 +321,9 @@ export default function dashboard() {
           </div>
         </article>
 
-        <article className="block border bg-slate-800 relative flex flex-col">
+        <article className="block bg-slate-800 relative flex flex-col">
           <div className="flex justify-between items-center p-2">
-            <span className="font-black font-anton text-[#F8F0DC] text-8xl md:text-9xl border h-auto">
+            <span className="font-black font-anton text-[#F8F0DC] text-8xl md:text-9xl h-auto">
               98
             </span>
             <span className="flex items-end">
