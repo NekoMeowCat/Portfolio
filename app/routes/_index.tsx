@@ -321,7 +321,14 @@ export default function dashboard() {
           </div>
         </article>
 
-        <article className="block bg-slate-800 relative flex flex-col">
+        <article
+          className="block bg-slate-800 relative flex flex-col"
+          style={{
+            backgroundImage: "url('/wallpaper.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <div className="flex justify-between items-center p-2">
             <span className="font-black font-anton text-[#F8F0DC] text-8xl md:text-9xl h-auto">
               98
@@ -334,12 +341,6 @@ export default function dashboard() {
               />
             </span>
           </div>
-
-          <img
-            src="/pokeball.png"
-            alt="Pokéball"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-20"
-          />
 
           <Carousel />
         </article>
