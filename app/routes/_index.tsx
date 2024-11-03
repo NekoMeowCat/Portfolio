@@ -84,7 +84,7 @@ export default function dashboard() {
             </span>
           </article>
           <article className="flex flex-col h-full w-full justify-between gap-y-6 md:gap-y-10">
-            <div className="h-auto border block md:flex md:justify-between space-y-6 md:space-y-0">
+            <div className="h-auto block md:flex md:justify-between space-y-6 md:space-y-0">
               <div className="flex flex-col">
                 <span className="uppercase font-anton text-2xl md:text-4xl tracking-tight">
                   work days
