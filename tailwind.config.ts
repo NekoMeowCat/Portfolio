@@ -19,7 +19,7 @@ export default {
           '"Noto Color Emoji"',
         ],
         anton: ['"Anton"'],
-        robot: ['"Roboto"'],
+        roboto: ['"Roboto"'],
         bueno: ['"Bueno"', "sans-serif"],
       },
       boxShadow: {
