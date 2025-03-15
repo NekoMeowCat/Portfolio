@@ -61,7 +61,7 @@ export default function LoveLetter() {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="bg-white bg-opacity-80 backdrop-blur-lg p-12 rounded-3xl shadow-2xl max-w-3xl w-full border border-pink-200 relative z-0"
+          className="bg-white bg-opacity-80 backdrop-blur-lg p-4 lg:p-12 rounded-3xl shadow-2xl max-w-3xl w-full border border-pink-200 relative z-0"
         >
           <h1 className="text-5xl font-serif text-pink-700 font-bold mb-6 text-center">
             My Dearest Love,
