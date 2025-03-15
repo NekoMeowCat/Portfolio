@@ -91,7 +91,7 @@ export default function LoveLetter() {
             the ones that pass by without notice, yet leave a mark that stays
             forever. And in these quiet moments, I realize that I’m lucky. I’m
             lucky to have found you in the most unexpected of places, where love
-            doesn’t announce itself but simply becomes.
+            doesn’t announce itself but simply becomes..
           </p>
 
           <p className="text-right text-2xl text-pink-600 font-signature mt-12">
