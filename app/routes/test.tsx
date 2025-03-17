@@ -1,13 +1,32 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 export default function LoveLetter() {
   const [showLetter, setShowLetter] = useState(false);
   const [isClient, setIsClient] = useState(false);
+  const audioRef = useRef(null);
 
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  useEffect(() => {
+    let audio;
+
+    if (showLetter) {
+      audio = new Audio("/meet.mp3");
+      audio.loop = true;
+      audio.volume = 0.3;
+      audio.play().catch((err) => console.log("Autoplay blocked:", err));
+    }
+
+    return () => {
+      if (audio) {
+        audio.pause();
+        audio = null;
+      }
+    };
+  }, [showLetter]);
 
   if (!isClient) {
     return null;
@@ -24,7 +43,7 @@ export default function LoveLetter() {
           onClick={() => setShowLetter(true)}
           style={{
             background: "linear-gradient(145deg, #ffe4e6 0%, #fecdd3 100%)",
-            perspective: 1000, // for 3D rotation
+            perspective: 1000,
           }}
         >
           {/* Envelope Body */}
@@ -33,7 +52,7 @@ export default function LoveLetter() {
             <motion.div
               initial={{ rotateX: 0 }}
               animate={{ rotateX: 0 }}
-              whileHover={{ rotateX: -120 }} // Negative to open upwards
+              whileHover={{ rotateX: -120 }}
               transition={{ duration: 0.5 }}
               className="absolute top-0 left-0 w-full h-1/2 origin-top transform"
               style={{
@@ -42,15 +61,18 @@ export default function LoveLetter() {
                 boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
               }}
             />
-
-            {/* Envelope Content (emoji & text) */}
+            {/* Envelope Content */}
             <motion.div
               initial={{ scale: 1 }}
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ repeat: Infinity, duration: 2 }}
               className="relative z-10 text-5xl mt-8"
             >
-              <img src="mae.png" alt="love letter" className="w-48 h-48" />
+              <img
+                src="mae.png"
+                alt="Envelope with a special surprise inside"
+                className="w-48 h-48"
+              />
             </motion.div>
           </div>
         </motion.div>
@@ -91,7 +113,7 @@ export default function LoveLetter() {
             the ones that pass by without notice, yet leave a mark that stays
             forever. And in these quiet moments, I realize that I’m lucky. I’m
             lucky to have found you in the most unexpected of places, where love
-            doesn’t announce itself but simply becomes..
+            doesn’t announce itself but simply becomes.
           </p>
 
           <p className="text-right text-2xl text-pink-600 font-signature mt-12">
