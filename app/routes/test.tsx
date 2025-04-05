@@ -69,9 +69,9 @@ export default function LoveLetter() {
               className="relative z-10 text-5xl mt-8"
             >
               <img
-                src="mae.png"
+                src="bd.png"
                 alt="Envelope with a special surprise inside"
-                className="w-48 h-48"
+                className="w-30 h-30"
               />
             </motion.div>
           </div>
@@ -83,44 +83,63 @@ export default function LoveLetter() {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="bg-white bg-opacity-80 backdrop-blur-lg p-12 rounded-3xl shadow-2xl max-w-3xl w-full border border-pink-200 relative z-0"
+          className="bg-white bg-opacity-80 backdrop-blur-lg p-12 rounded-xl shadow-2xl max-w-3xl w-full border border-pink-200 relative z-0"
         >
-          <h1 className="text-5xl font-serif text-pink-700 font-bold mb-6 text-center">
-            My Dearest Love,
+          <h1 className="text-5xl font-serif text-[#6b9080] font-bold mb-6 text-center">
+            생일 축하해요
           </h1>
 
-          <p className="mb-8 text-lg text-gray-700 leading-relaxed text-justify">
-            Sometimes, I wonder how it is that two lives, so ordinary, so
-            separate, can intertwine in the most beautiful way, like the first
-            rays of morning light sneaking through a window you never knew you
-            needed open. You arrived like a quiet whisper, unassuming, yet
-            impossible to ignore. At first, it was nothing more than a passing
-            glance, a fleeting thought. But then, without even realizing it, you
-            became the part of my day I look forward to, the unexpected rhythm
-            that made the chaos feel like a dance. What strikes me most is how
-            natural it all feels, how every moment spent with you seems to
-            effortlessly melt into the next, like a melody I never want to end.
-            There are no grand gestures, no dramatic declarations, just the
-            comfort of knowing that, in this world, I found something real.
-            Something that doesn’t need to be loud to be understood. In the
-            quiet spaces between our words, in the shared glances and the soft
-            laughter, I find something far greater than I ever imagined. You’ve
-            become my favorite part of this everyday life, the little spark that
-            makes the mundane feel extraordinary. Maybe that’s the way love
-            works, silent and unassuming, not demanding attention, but filling
-            the empty spaces in the most unexpected ways. I’m learning, slowly,
-            that sometimes it’s not about the big moments but the small ones,
-            the ones that pass by without notice, yet leave a mark that stays
-            forever. And in these quiet moments, I realize that I’m lucky. I’m
-            lucky to have found you in the most unexpected of places, where love
-            doesn’t announce itself but simply becomes.
+          <h2 className="text-left mb-4 capitalize font-serif text-[#6b9080] italic font-medium">
+            Saengil chukhahae,
+          </h2>
+
+          <p className="mb-3 text-base text-gray-700 leading-6 tracking-wide text-justify">
+            There are stories that speak of people who change often, not just in
+            the way they look, but in the way they feel, the weight they carry,
+            the light they share. And somehow, I find those stories quietly
+            familiar when I think of you. Because even as time moves and days
+            shift you into different shapes, softer some days, stronger on
+            others, you remain you. Honest. Brave. Unknowingly radiant. And I
+            want you to know, especially today: I see you. Not just the version
+            of you that the world claps for, but the one that shows up even when
+            it's hard. The one that doubts, and dreams, and does it all with a
+            heart so full it spills into everyone lucky enough to stand near
+            you. You are loved, not for what you do or how you seem, but simply
+            because you are. I’m thankful for the way you move through this
+            world, for your presence, your warmth, your wonder. And if ever you
+            feel unsure or worn thin, I hope you remember this: you are not
+            alone. You never have been. And my heart? It’s always known where
+            home is—it’s wherever you are. And to the love that wraps itself
+            around you, even when you forget it’s there. You’ve touched so many
+            lives in ways you’ll never truly know, quietly shaping the world
+            with every step you take. The way you listen, with all of yourself.
+            The way you give without hesitation, even when you think there’s
+            nothing left to give. The way you hold the space for others to grow,
+            even when you feel like you're still figuring it out yourself. I see
+            how hard you work to be true to yourself, how much you give to those
+            around you, yet I also see the softness that lies beneath your
+            strength, the gentle spirit that still holds on to kindness, even
+            when the world can feel cold. That, to me, is one of the most
+            beautiful things about you—how you balance the fire and the calm,
+            the loud and the quiet. And so, I want you to hold this in your
+            heart, especially today: you are an extraordinary person, even on
+            the days you doubt it. Even when you’re not sure of the path ahead,
+            know that you have already carved a space for yourself here, in this
+            world, in my heart, and in the hearts of so many who love you. And
+            when the days feel heavy or the world feels too big, always
+            remember: you are not alone. I am here, and I always will be.
+            Through every chapter, every change, every season. There’s nothing
+            that can take away how deeply you are loved. Here’s to the person
+            you are, and the person you’re still becoming. To the parts of you
+            that are yet to bloom, and the ones that are already here, shining
+            brighter than you could ever imagine. You are a story still being
+            written, and it’s already beautiful.
           </p>
 
-          <p className="text-right text-2xl text-pink-600 font-signature mt-12">
+          <p className="text-right text-2xl text-[#6b9080] font-signature mt-12">
             With all the love in my heart,
             <br />
             Park Seo Junzel
-            <img src="maemae.png" alt="love letter" className="w-48 h-48" />
           </p>
         </motion.div>
       )}
